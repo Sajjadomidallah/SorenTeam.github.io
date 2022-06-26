@@ -1,0 +1,121 @@
+
+@font-face {
+	font-family: 'Iransens';
+	src: url('IRANSansWeb_Medium.eot') format('eot'),  /* IE6–8 */ url('IRANSansWeb_Medium.woff2') format('woff2'),  /* Chrome36+, Opera24+*/ url('IRANSansWeb_Medium.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+
+body{
+    font-family: 'Iransens';
+    height: 100vh;
+    /* background-image: 
+    linear-gradient(to right bottom, 
+   rgb(25, 255, 4),
+   rgba(49, 252, 150, 0.8)),
+   url('https://images.pexels.com/photos/213399/pexels-photo-213399.jpeg'); */
+   background: linear-gradient(to right, #833ab4, #1dfd3b81, #00a4aa);
+   animation:animate-background 15s infinite ease-in-out;
+    
+  background-size: 400% 400%;
+    background-position: top;
+    position: relative;
+
+    /* clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); */
+}
+@keyframes animate-background {
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+
+/* ///////////////////////////////// */
+
+figcaption{
+    font-size: 16px;
+    text-align: center;
+    padding-top: 10px;
+    transition: all 0.3s;
+
+}
+
+.container figcaption a{
+    color: rgb(1, 33, 61);
+    text-decoration: none;
+    font-weight: 500;
+    margin: 0 auto;
+    transition: 0.3s;
+    background-color: rgb(255, 255, 255);
+    padding: 5px 60px;
+    border-radius: 10px;
+
+}
+figure{
+    background-color: rgb(232 232 232);
+    border: 3px solid rgb(232 232 232);
+    padding: 12px;
+    border-radius: 10px;
+    width: 280px;
+    position: relative;
+    height: 360px;
+    float: left;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.container{
+    margin: 10px auto;
+    font-family: 'Iransens';
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(350px ,1fr));
+    gap: 20px;
+}
+figure img{
+    width: 280px;
+    height: 266px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+figure img:hover{
+   transform:scale(0.95);
+   
+}
+figure:hover{
+    border: 3px solid rgb(22, 214, 4);
+}
+.container figcaption a:hover{
+
+    background-color: green;
+    color: white;
+}
+
+
+
+figure .point{
+    position: absolute;
+    bottom: 10px;
+    left: 5px;
+    transition: all 0.3s;
+
+}
+figure .point .price{
+    background-color: rgb(232 232 232);
+    color: gray;
+    border-radius: 1px;
+    padding: inherit;
+}
+figure .point .price:hover{
+    background-color:rgb(232 232 232) ;
+    color: gray;
+}
+figure .point:hover{
+    transform: scale(1.05);
+}
+#price-dificult{
+    padding: 5px 
+}
+/* /////////////////////////////////////////////////// */

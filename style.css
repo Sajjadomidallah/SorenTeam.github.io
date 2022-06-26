@@ -1,0 +1,256 @@
+
+@font-face {
+	font-family: 'Iransens';
+	src: url('IRANSansWeb_Medium.eot') format('eot'),  /* IE6–8 */ url('IRANSansWeb_Medium.woff2') format('woff2'),  /* Chrome36+, Opera24+*/ url('IRANSansWeb_Medium.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+
+/* body{
+    font-family: 'Iransens';
+    direction: rtl;
+    font-size: 15px;
+} */
+html, body {
+    margin: 0;
+    padding: 0;
+    background: #fff;
+  }
+
+.header {
+    font-family: 'Iransens';
+    height: 100vh;
+    /* background-image: 
+    linear-gradient(to right bottom, 
+   rgb(25, 255, 4),
+   rgba(49, 252, 150, 0.8)),
+   url('https://images.pexels.com/photos/213399/pexels-photo-213399.jpeg'); */
+   background: linear-gradient(to right, #833ab4, #1dfd3b, #00a4aa);
+   animation:animate-background 10s infinite ease-in-out;
+    
+  background-size: 400% 400%;
+    background-position: top;
+    position: relative;
+
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+}
+@keyframes animate-background {
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+.brand-box {
+    position: absolute;
+    top: 20px;
+    left: 42%;
+    cursor: pointer;
+    border-bottom:3px solid #833ab4;
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+    transition: all 0.3s;
+}
+.brand-box:hover {
+    border: none;
+    transform:scale(1.08);
+}
+
+.brand { 
+    font-size: 30px; 
+
+
+}
+
+.text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.heading-primary {
+    color: #fff;
+    text-transform: uppercase;
+
+    backface-visibility: hidden;
+    margin-bottom: 30px;
+}
+
+.heading-primary-main {
+    display: block;
+    font-size: 38px;
+    font-weight: 400;
+    letter-spacing: 5px;
+    color: black;
+}
+
+.heading-primary-sub {
+    display: block;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 7.4px;
+    color: black;
+}
+
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 16px 31px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    position: relative;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+    background-color: #fff;
+    color: rgb(0, 0, 0);
+  font-size: 14px;
+}
+/* ////////////////////////////////////////////////////// */
+  
+
+
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /* .gmail{
+    position: absolute;
+    display: block;
+    margin: 19px 0%;
+    background-color: white;
+    padding: 12px 8px;
+    border-radius: 8px;
+    right: 5px;
+    top: 0;
+    font-size: 16px;
+    font-family: 'IRANSENS';
+
+  } */
+.menu{
+    font-family: sans-serif;
+    text-align: left;
+    padding:20px 50px ;
+    
+  }
+.menu-icon{
+    position: relative;
+    width: 100px;
+    background-color: #fff;
+    height: 50px;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 25px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 15px;
+    transition: all 0.4s;
+}
+
+
+.menu-icon span{
+    position: absolute;
+    left:12px;
+    text-align: center;
+    font-size: 17px;
+}
+.menu-bar{
+    position: relative;
+    display: inline-block;
+}
+.menu-bar .items-name{
+    position: absolute;
+    top: 65px;
+    transform: translateX(-50%) scale(0);
+    transform-origin: center;
+    background-color: #fff;
+    width: 170px;
+    height: 220px;
+    text-align: left;
+    color: rgb(3, 167, 98);
+    padding-top: 10px;
+    padding-left: 7px;
+    border: 2px solid rgb(0, 85, 50);
+    border-radius: 10px;
+    transition: all 0.4s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    left: 50%;
+    opacity: 0;
+    font-weight: 500;
+
+}
+.items-name i{
+    font-size: 13px;
+}
+.menu-bar .items-name div a{
+    text-decoration: none;
+    color: rgb(0, 85, 50);
+    border-bottom: 1px solid rgb(0, 85, 50);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border-bottom-width: 3px;
+    border-bottom-right-radius:10px ;
+    border-bottom-left-radius:10px ;
+    text-shadow: 2px 2px 40px rgb(27, 161, 94);
+    padding: 8px;
+}
+.menu-bar .items-name div {
+    padding: 10px 10px;
+    cursor: pointer;
+    text-align: center;
+
+}
+.menu .menu-button{
+    position: absolute;
+    width: 90px;
+    height: 50px;
+    top: -3px;
+    left: -3px;
+    z-index: 2;
+    opacity: 0;
+    cursor: pointer;
+}
+.menu-button:checked ~ .items-name {
+    transform: translateX(-50%) scale(1);
+    opacity: 1;
+    border-radius: 10px;
+    user-select: auto;
+    border-radius: 20px;
+}
+.menu-bar .items-name:hover {
+    border: 2px solid rgb(27, 161, 94);
+}
+
+.menu-button:checked ~ .menu-icon{
+    border: 3px solid rgb(83, 83, 83);
+    color: rgb(19, 16, 16);
+}
+.menu-bar .items-name div a:hover{
+    border: none;
+    font-size: 23px;
+    color: #292f30;
+}
+.carousel-item {
+    height: 65vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
